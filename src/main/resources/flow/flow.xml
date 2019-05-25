@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="flow1" class="com.loodeer.executeflow.flow.DefaultExecuteFlowImpl">
+        <property name="stageList1">
+            <list>
+                <bean id="stage1" class="com.loodeer.executeflow.flow.Stage1" />
+                <bean id="stage2" class="com.loodeer.executeflow.flow.Stage2" />
+            </list>
+        </property>
+        <property name="stageList2">
+            <list>
+                <bean id="stage3" class="com.loodeer.executeflow.flow.Stage3" />
+            </list>
+        </property>
+    </bean>
+</beans>
